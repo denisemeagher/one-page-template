@@ -1,0 +1,156 @@
+/* CSS reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Utility Classes */
+
+.left {text-align: left;}
+.right {text-align: right;}
+.center {text-align: center;}
+
+.padded {padding: 5%;}
+.no-padding {padding: 0;}
+
+.bg-light {
+  background-color: rgb(230,230,230);
+}
+
+.bg-dark {
+  background-color: rgb(60,60,65);
+  color: #fff;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(200,200,205);
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border: 1px solid rgb(60,60,60);
+  color: inherit;
+  display: inline-block;
+  transition: all .5s;
+}
+
+.button:hover {
+  background-color: rgb(60,60,60);
+  color: #fff;
+  border-color: rgb(60,60,60);
+
+}
+
+/* Universal Styles */
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: rgb(60,60,65);
+}
+
+h2, h3, h4 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* header & footer */
+
+header {
+  padding: 1% 5%;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header a:hover {
+  color: rgb(150,150,155);
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+    font-weight: bold;
+    display:inline-block;
+}
+
+footer a:hover {
+  color: orange;
+}
+
+footer .fab {
+  font-size: 1.5rem;
+}
+
+/*-------------- Banner ------------ */
+
+.banner {
+  background-image: url('images/henrik-donnestad-DCD0_mzLCsg-unsplash.jpg');
+  min-height: 80vh;
+  color: #fff;
+}
+
+/* sleep like a baby */
+.banner h3 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.banner h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+
+/* Media Queries */
+
+@media(max-width:768px) {
+
+  .banner {
+    min-height: 60vh;
+  }
+
+  .bg-image {
+    padding-bottom: 50%;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  .center {
+    text-align: left;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+}
